@@ -12,7 +12,7 @@ environment {
         stage("build"){
             steps {
                  echo "-----------build started----------"
-                 sh 'mvn clean deploy -Dmaven.test.skip=true'
+                sh 'mvn clean deploy -Dmaven.test.skip=true'
                  echo "-----------build completed--------"
             }
         }
@@ -24,7 +24,7 @@ environment {
             }
         }
 
-     stage('SonarQube analysis') {
+    stage('SonarQube analysis') {
     environment {
       scannerHome = tool 'Losteroid-sonar-scanner'
     }
