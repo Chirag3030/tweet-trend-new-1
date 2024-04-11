@@ -1,4 +1,4 @@
-def registry = ' https://losteroid.jfrog.io'
+def registry = 'https://losteroid.jfrog.io'
 pipeline {
     agent {
         node {
@@ -37,7 +37,7 @@ environment {
                               "files": [
                                 {
                                   "pattern": "jarstaging/(*)",
-                                  "target": "libs-release-local/{1}",
+                                  "target": "losteroid-maven-libs-release-local/{1}",
                                   "flat": "false",
                                   "props" : "${properties}",
                                   "exclusions": [ "*.sha1", "*.md5"]
