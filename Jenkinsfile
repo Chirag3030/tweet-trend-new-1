@@ -63,7 +63,7 @@ pipeline {
                 stage (" Docker Publish "){
             steps {
                 script {
-                   echo '<--------------- Docker Publish Started ---------------->'  
+                   echo '<--------------- Docker Publish Started ----------------->'  
                     docker.withRegistry(registry, 'artifact-cred'){
                         app.push()
                     }    
