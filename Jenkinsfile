@@ -1,5 +1,5 @@
 def registry ='https://losteroid.jfrog.io'
-def imageName = 'losteroid.jfrog.io/losteroid-docker-local/ttrend:2.1.2'
+def imageName = 'losteroid.jfrog.io/losteroid-docker-local/ttrend'
 def version   = '2.1.2'
 pipeline {
     agent {
@@ -45,7 +45,7 @@ pipeline {
                     def buildInfo = server.upload(uploadSpec)
                     buildInfo.env.collect()
                     server.publishBuildInfo(buildInfo)
-                    echo '<--------------- Jar Publish Ended --------------->'
+                    echo '<--------------- Jar Publish Ended ---------------->'
                 }
             }
         }
