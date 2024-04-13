@@ -1,4 +1,4 @@
 FROM openjdk:8
-ADD jarstaging/com/valaxy/demo-workshop/2.1.2
-ENTRYPOINT ["java", "-jar", "demo-workshop.jar"]
+COPY jarstaging/com/valaxy/demo-workshop/demo-workshop-2.1.2.jar /demo-workshop.jar
+ENTRYPOINT ["java", "-jar", "/demo-workshop.jar"]
 # dockerfile
