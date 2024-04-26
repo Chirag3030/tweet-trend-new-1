@@ -1,5 +1,5 @@
 def registry ='https://losteroid1.jfrog.io'
-def imageName = 'losteroid.jfrog.io/losteroid-docker-local/ttrend'
+def imageName = 'losteroid1.jfrog.io/losteroid-docker-local/ttrend'
 def version   = '2.1.2'
 pipeline {
     agent {
