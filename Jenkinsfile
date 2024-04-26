@@ -1,4 +1,4 @@
-def registry ='https://losteroid.jfrog.io'
+def registry ='https://losteroid1.jfrog.io'
 def imageName = 'losteroid.jfrog.io/losteroid-docker-local/ttrend'
 def version   = '2.1.2'
 pipeline {
@@ -35,7 +35,7 @@ pipeline {
                         "files": [
                             {
                                 "pattern": "jarstaging/(*)",
-                                "target": "losteroid-maven-libs-release-local/{1}",
+                                "target": "losteroid-libs-release-local/{1}",
                                 "flat": "false",
                                 "props": "${properties}",
                                 "exclusions": ["*.sha1", "*.md5"]
